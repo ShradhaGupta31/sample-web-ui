@@ -473,14 +473,18 @@ export interface DataWithCount<T> {
 
 export interface MPSVersion {
   serviceVersion: string
-  latest : {
-    tag_name: string
-  }
 }
 
 export interface RPSVersion {
   serviceVersion: string
   protocolVersion: string
+}
+
+export interface ConsoleVersion {
+  current: string
+  latest: {
+    tag_name: string
+  }
 }
 
 export interface CertInfo {
